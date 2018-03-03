@@ -14,7 +14,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.hackclub.compactevent.fragment.proj;
+import com.hackclub.compactevent.Fragments.hunt;
+import com.hackclub.compactevent.Fragments.militia;
+import com.hackclub.compactevent.Fragments.proj;
+import com.hackclub.compactevent.Fragments.quiz;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -86,11 +89,14 @@ public class MainActivity extends AppCompatActivity
             FragmentManager project = getFragmentManager();
             project.beginTransaction().replace(R.id.frameView, new proj()).commit();
         } else if(id == R.id.comp_hunt){
-
+            FragmentManager project = getFragmentManager();
+            project.beginTransaction().replace(R.id.frameView, new hunt()).commit();
         }else if(id == R.id.comp_quiz){
-
+            FragmentManager project = getFragmentManager();
+            project.beginTransaction().replace(R.id.frameView, new quiz()).commit();
         }else if(id == R.id.comp_militia){
-
+            FragmentManager project = getFragmentManager();
+            project.beginTransaction().replace(R.id.frameView, new militia()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
