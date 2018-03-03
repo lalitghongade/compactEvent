@@ -1,4 +1,4 @@
-package com.hackclub.compactevent;
+package com.hackclub.compactevent.fragment;
 
 import android.content.Context;
 import android.net.Uri;

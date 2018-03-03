@@ -14,6 +14,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.hackclub.compactevent.fragment.proj;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -78,11 +80,11 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         if (id == R.id.comp_project) {
-            // FragmentManager frag =
+            FragmentManager project = getFragmentManager();
+            project.beginTransaction().replace(R.id.frameView, new proj()).commit();
         } else if(id == R.id.comp_hunt){
 
         }else if(id == R.id.comp_quiz){

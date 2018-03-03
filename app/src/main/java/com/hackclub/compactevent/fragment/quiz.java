@@ -1,4 +1,4 @@
-package com.hackclub.compactevent;
+package com.hackclub.compactevent.fragment;
 
 import android.content.Context;
 import android.net.Uri;
@@ -12,12 +12,12 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link hunt.OnFragmentInteractionListener} interface
+ * {@link quiz.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link hunt#newInstance} factory method to
+ * Use the {@link quiz#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class hunt extends Fragment {
+public class quiz extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -29,7 +29,7 @@ public class hunt extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public hunt() {
+    public quiz() {
         // Required empty public constructor
     }
 
@@ -39,11 +39,11 @@ public class hunt extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment hunt.
+     * @return A new instance of fragment quiz.
      */
     // TODO: Rename and change types and number of parameters
-    public static hunt newInstance(String param1, String param2) {
-        hunt fragment = new hunt();
+    public static quiz newInstance(String param1, String param2) {
+        quiz fragment = new quiz();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,7 +64,7 @@ public class hunt extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_hunt, container, false);
+        return inflater.inflate(R.layout.fragment_quiz, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
